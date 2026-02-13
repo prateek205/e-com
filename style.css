@@ -1,6 +1,9 @@
 :root {
   --primary-font: poppins-font-bold;
   --secondary-font: poppins-font-light;
+
+  --primary-text-color: #2563eb;
+  --secondary-bg-color: #f8fafe;
 }
 
 @font-face {
@@ -21,7 +24,7 @@
 /* Header Section */
 .headerSection {
   width: 100%;
-  background-color: #f8fafe;
+  background-color: var(--secondary-bg-color);
 }
 .header {
   /* border: 2px solid black; */
@@ -44,7 +47,7 @@
 }
 
 #span {
-  color: #2563eb;
+  color: var(--primary-text-color);
 }
 .headerList {
   display: flex;
@@ -70,7 +73,7 @@
   bottom: 0;
   width: 0%;
   height: 2.5px;
-  background-color: #2563eb;
+  background-color: var(--primary-text-color);
   transition: 0.3s ease;
 }
 
