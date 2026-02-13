@@ -61,7 +61,7 @@
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: capitalize;
 }
 
@@ -69,11 +69,11 @@
   position: absolute;
   content: "";
   left: 0;
-  top: 25px;
+  top: 20px;
   bottom: 0;
   width: 0%;
   height: 2.5px;
-  background-color: var(--primary-text-color);
+  background: var(--primary-text-color);
   transition: 0.3s ease;
 }
 
