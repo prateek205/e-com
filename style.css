@@ -65,6 +65,7 @@
   transition: all 0.2s ease-in-out;
   font-size: 15px;
   text-transform: capitalize;
+  color: var(--primary-black-color);
 }
 .navList a::after {
   position: absolute;
@@ -78,7 +79,6 @@
   background-color: var(--primary-text-color);
 }
 .navList a:hover::after {
-  color: var(--primary-text-color);
   width: 100%;
 }
 
@@ -87,7 +87,7 @@
   position: relative;
   width: 98%;
   margin: auto;
-  height: 80vh;
+  height: 86vh;
   margin-top: 6%;
   background: url("assets/bg.jpg") center / cover no-repeat;
   /* border: 2px solid black; */
