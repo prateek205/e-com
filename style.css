@@ -49,7 +49,6 @@
   font-weight: 700;
   color: #0f172a;
 }
-
 #span {
   color: var(--primary-text-color);
 }
@@ -58,7 +57,6 @@
   gap: 80px;
   list-style: none;
 }
-
 .navList a {
   font-family: var(--secondary-font);
   position: relative;
@@ -68,7 +66,6 @@
   font-size: 15px;
   text-transform: capitalize;
 }
-
 .navList a::after {
   position: absolute;
   content: "";
@@ -80,7 +77,6 @@
   transition: 0.3s ease;
   background-color: var(--primary-text-color);
 }
-
 .navList a:hover::after {
   color: var(--primary-text-color);
   width: 100%;
@@ -126,7 +122,6 @@
   text-transform: capitalize;
   font-family: var(--secondary-font);
 }
-
 #sectionbtn {
   font-size: 15px;
   text-transform: uppercase;
