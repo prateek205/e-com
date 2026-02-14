@@ -3,11 +3,13 @@
   --secondary-font: poppins-font-light;
   --accent-font: roboto-font;
 
-  --primary-text-color: #2563eb;
-  --secondary-bg-color: #f8fafe;
-  --primary-white-color: #ffffff;
-  --primary-black-color: #000000;
-  --primary-btn-color: #2f6bec;
+  --text-color: #2563eb;
+  --bg-color: #f8fafe;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --btn-color: #2f6bec;
+  --grey-color: #64748b;
+  --orange-color: #f97316;
 }
 
 @font-face {
@@ -32,7 +34,7 @@
 /* nav Section */
 .navSection {
   width: 100%;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-color);
 }
 .nav {
   /* border: 2px solid black; */
@@ -46,7 +48,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-color);
 }
 #navLg {
   text-transform: capitalize;
@@ -55,7 +57,7 @@
   color: #0f172a;
 }
 #span {
-  color: var(--primary-text-color);
+  color: var(--text-color);
 }
 .navList {
   display: flex;
@@ -70,7 +72,7 @@
   transition: all 0.2s ease-in-out;
   font-size: 15px;
   text-transform: capitalize;
-  color: var(--primary-black-color);
+  color: var(--black-color);
 }
 .navList a::after {
   position: absolute;
@@ -81,7 +83,7 @@
   width: 0%;
   height: 2.5px;
   transition: 0.3s ease;
-  background-color: var(--primary-text-color);
+  background-color: var(--text-color);
 }
 .navList a:hover::after {
   width: 100%;
@@ -113,13 +115,13 @@
   opacity: 0.95;
 }
 #sectionTitle {
-  color: var(--primary-white-color);
+  color: var(--white-color);
   font-size: 56px;
   font-weight: 900;
   font-family: var(--primary-font);
 }
 #sectionTagLine {
-  color: var(--primary-white-color);
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
@@ -131,16 +133,16 @@
   font-weight: 500px;
   cursor: pointer;
 }
-button {
+.section button {
   border: none;
   outline: none;
   border-radius: 2px;
   padding: 10px 25px;
   transition: all 0.2s ease-in-out;
 }
-button:hover {
-  background-color: var(--primary-btn-color);
-  color: var(--primary-white-color);
+.section button:hover {
+  background-color: var(--btn-color);
+  color: var(--white-color);
   transform: translateY(-1px);
 }
 
@@ -151,9 +153,11 @@ button:hover {
   height: 50vh;
   margin-top: 2%;
   padding: 10px 20px;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-color);
 }
-#productHeading {
+#productHeading,
+#feaHeading {
+  font-size: 28px;
   padding: 10px 0px;
   text-transform: capitalize;
   font-family: var(--primary-font);
@@ -183,7 +187,7 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 2px;
   gap: 20px;
   padding: 10px 15px;
   cursor: pointer;
@@ -191,13 +195,13 @@ button:hover {
 #productImg {
   width: 100%;
 }
-img {
+.productCard img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   transition: all 0.2s ease;
 }
-img:hover {
+.productCard img:hover {
   transform: scale(1.05);
 }
 #productTitle {
@@ -205,4 +209,97 @@ img:hover {
   font-weight: 500;
   text-transform: capitalize;
   font-family: var(--accent-font);
+}
+
+/* featured product */
+.featuredContainer {
+  width: 98%;
+  margin: auto;
+  height: 100%;
+  /* border: 1px solid black; */
+  padding: 10px 20px;
+}
+
+.prodCard {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+.featureCard {
+  border: 1px solid black;
+  width: 20%;
+  border-radius: 2px;
+}
+.featureItems {
+  padding: 15px 20px;
+  cursor: pointer;
+  font-family: var(--accent-font);
+}
+#feaImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featureItems img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  transition: all 0.2s ease;
+}
+.featureItems img:hover {
+  transform: scale(0.95);
+}
+#feaTitle {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.featureItems p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#feaPrice {
+  font-size: 20px;
+  font-weight: 600;
+}
+#feaDisPrice {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: var(--grey-color);
+}
+#feaDiscount {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--orange-color);
+}
+
+#addBtn {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500px;
+  cursor: pointer;
+  margin-top: 10%;
+}
+
+.featureItems button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 0px;
+  border: 1px solid black;
+  transition: all 0.2s ease;
+  background-color: var(--bg-color);
+}
+.featureItems button:hover {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  transform: translateY(-2px);
 }
