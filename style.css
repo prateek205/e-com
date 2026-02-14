@@ -61,7 +61,7 @@
 }
 .navList {
   display: flex;
-  gap: 80px;
+  gap: 40px;
   list-style: none;
 }
 .navList a {
