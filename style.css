@@ -1,12 +1,13 @@
 :root {
   --primary-font: poppins-font-bold;
   --secondary-font: poppins-font-light;
+  --accent-font: roboto-font;
 
   --primary-text-color: #2563eb;
   --secondary-bg-color: #f8fafe;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
-  --primary-btn-color: #2563eb;
+  --primary-btn-color: #2f6bec;
 }
 
 @font-face {
@@ -16,6 +17,10 @@
 @font-face {
   font-family: poppins-font-light;
   src: url("fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: roboto-font;
+  src: url("fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
 
 * {
@@ -90,8 +95,6 @@
   height: 86vh;
   margin-top: 6%;
   background: url("assets/bg.jpg") center / cover no-repeat;
-  /* border: 2px solid black; */
-  z-index: -1;
 }
 .heroContainer::before {
   content: "";
@@ -133,7 +136,7 @@ button {
   outline: none;
   border-radius: 2px;
   padding: 10px 25px;
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 button:hover {
   background-color: var(--primary-btn-color);
@@ -147,8 +150,8 @@ button:hover {
   margin: auto;
   height: 50vh;
   margin-top: 2%;
-  border: 1px solid black;
-  padding: 5px 20px;
+  padding: 10px 20px;
+  background-color: var(--secondary-bg-color);
 }
 #productHeading {
   padding: 10px 0px;
@@ -163,9 +166,43 @@ button:hover {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
-.box {
-  border: 1px solid black;
-}
 #box1 {
-  grid-column: 1/4;
+  grid-column: 1/6;
+}
+.productMenu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px 20px;
+  gap: 20px;
+}
+.productCard {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+#productImg {
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+#productTitle {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--accent-font);
 }
