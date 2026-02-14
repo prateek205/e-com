@@ -31,7 +31,7 @@
   box-sizing: border-box;
 }
 
-/* nav Section */
+/* === NAVBAR SECTION === */
 .navSection {
   width: 100%;
   background-color: var(--bg-color);
@@ -89,7 +89,7 @@
   width: 100%;
 }
 
-/* Hero Section */
+/* === HERO SECTION === */
 .heroContainer {
   position: relative;
   width: 98%;
@@ -146,7 +146,7 @@
   transform: translateY(-1px);
 }
 
-/* Product Section */
+/* === PRODUCT SECTION === */
 .productContainer {
   width: 98%;
   margin: auto;
@@ -211,15 +211,14 @@
   font-family: var(--accent-font);
 }
 
-/* featured product */
+/* === FEATURED SECTION === */
 .featuredContainer {
+  /* border: 1px solid black; */
   width: 98%;
   margin: auto;
   height: 100%;
-  /* border: 1px solid black; */
   padding: 10px 20px;
 }
-
 .prodCard {
   display: flex;
   justify-content: space-evenly;
@@ -257,7 +256,6 @@
   text-align: center;
   padding: 10px 0px;
 }
-
 .featureItems p {
   display: flex;
   align-items: center;
@@ -279,7 +277,6 @@
   font-weight: 600;
   color: var(--orange-color);
 }
-
 #addBtn {
   font-size: 15px;
   text-transform: uppercase;
@@ -287,7 +284,6 @@
   cursor: pointer;
   margin-top: 10%;
 }
-
 .featureItems button {
   width: 100%;
   border: none;
