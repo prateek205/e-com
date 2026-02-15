@@ -299,3 +299,56 @@
   color: var(--white-color);
   transform: translateY(-2px);
 }
+
+/* === OFFER BANNER === */
+.offerBanner {
+  position: relative;
+  width: 98%;
+  margin: auto;
+  height: 75vh;
+  margin-top: 1%;
+  background: url("assets/banner.png") center / cover no-repeat;
+}
+.offerBanner::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+}
+.offerSection {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0.95;
+  color: var(--white-color);
+}
+#offerHeading {
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  font-size: 48px;
+}
+#offerPara {
+  font-family: var(--accent-font);
+  font-size: 15px;
+}
+#offerBtn {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  text-transform: capitalize;
+}
+.offerSection button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.offerSection button:hover {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  transform: translateY(-1px);
+}
