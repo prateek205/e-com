@@ -451,3 +451,78 @@ html {
   color: var(--white-color);
   transform: translateY(-1px);
 }
+
+/* === MOBILE RESPONSIVENESS === */
+@media screen and (max-width: 1024px) {
+  .prodCard {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .featureCard {
+    width: 40%;
+  }
+
+  #newsInput {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productContainer {
+    width: 100%;
+  }
+  .productMenu {
+    width: 100%;
+  }
+
+  .prodCard {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .featureCard {
+    width: 40%;
+  }
+  #newsInput {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .navList {
+    gap: 10px;
+  }
+
+  .section {
+    align-items: center;
+  }
+
+  .productContainer {
+    height: 100%;
+  }
+  .productMenu {
+    flex-direction: column;
+  }
+  .productCard {
+    width: 100%;
+  }
+
+  .featureCard {
+    width: 100%;
+  }
+
+  .offerSection {
+    text-align: center;
+  }
+
+  .newsContent {
+    text-align: center;
+  }
+  #newsInput {
+    width: 100%;
+  }
+}
