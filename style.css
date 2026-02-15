@@ -430,3 +430,24 @@
 #footerPara {
   font-size: 15px;
 }
+
+/* === BACK TO TOP === */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top {
+  /* position: fixed; */
+  right: 50px;
+  bottom: 80px;
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--btn-color);
+  transition: all 0.2s ease;
+  padding-left: 25px;
+}
+.top:hover {
+  color: var(--white-color);
+  transform: translateY(-1px);
+}
