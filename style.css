@@ -10,6 +10,17 @@
   --btn-color: #2f6bec;
   --grey-color: #64748b;
   --orange-color: #f97316;
+
+  --primary-width: 98%;
+
+  --heading-fontSize: 48px;
+  --section-title: 28px;
+  --product-name: 22px;
+  --card-title: 18px;
+  --description: 15px;
+  --small-text: 14px;
+  --price: 20px;
+  --btn: 15px;
 }
 
 @font-face {
@@ -54,7 +65,7 @@
   text-transform: capitalize;
   font-size: 26px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--black-color);
 }
 #span {
   color: var(--text-color);
@@ -70,7 +81,7 @@
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
-  font-size: 15px;
+  font-size: var(--description);
   text-transform: capitalize;
   color: var(--black-color);
 }
@@ -92,7 +103,7 @@
 /* === HERO SECTION === */
 .heroContainer {
   position: relative;
-  width: 98%;
+  width: var(--primary-width);
   margin: auto;
   height: 86vh;
   margin-top: 6%;
@@ -116,19 +127,19 @@
 }
 #sectionTitle {
   color: var(--white-color);
-  font-size: 56px;
+  font-size: var(--heading-fontSize);
   font-weight: 900;
   font-family: var(--primary-font);
 }
 #sectionTagLine {
   color: var(--white-color);
-  font-size: 14px;
+  font-size: var(--small-text);
   font-weight: 500;
   text-transform: capitalize;
   font-family: var(--secondary-font);
 }
 #sectionbtn {
-  font-size: 15px;
+  font-size: var(--description);
   text-transform: uppercase;
   font-weight: 500px;
   cursor: pointer;
@@ -148,7 +159,7 @@
 
 /* === PRODUCT SECTION === */
 .productContainer {
-  width: 98%;
+  width: var(--primary-width);
   margin: auto;
   height: 50vh;
   margin-top: 2%;
@@ -157,7 +168,7 @@
 }
 #productHeading,
 #feaHeading {
-  font-size: 28px;
+  font-size: var(--section-title);
   padding: 10px 0px;
   text-transform: capitalize;
   font-family: var(--primary-font);
@@ -205,7 +216,7 @@
   transform: scale(1.05);
 }
 #productTitle {
-  font-size: 18px;
+  font-size: var(--card-title);
   font-weight: 500;
   text-transform: capitalize;
   font-family: var(--accent-font);
@@ -214,7 +225,7 @@
 /* === FEATURED SECTION === */
 .featuredContainer {
   /* border: 1px solid black; */
-  width: 98%;
+  width: var(--primary-width);
   margin: auto;
   height: 100%;
   padding: 10px 20px;
@@ -243,14 +254,15 @@
 .featureItems img {
   width: 100%;
   height: 250px;
-  object-fit: contain;
+  object-fit: cover;
+  background-color: black;
   transition: all 0.2s ease;
 }
 .featureItems img:hover {
   transform: scale(0.95);
 }
 #feaTitle {
-  font-size: 22px;
+  font-size: var(--product-name);
   font-weight: 500;
   text-transform: capitalize;
   text-align: center;
@@ -263,17 +275,17 @@
   gap: 10px;
 }
 #feaPrice {
-  font-size: 20px;
+  font-size: var(--price);
   font-weight: 600;
 }
 #feaDisPrice {
-  font-size: 16px;
+  font-size: var(--description);
   font-weight: 400;
   text-decoration: line-through;
   color: var(--grey-color);
 }
 #feaDiscount {
-  font-size: 20px;
+  font-size: var(--description);
   font-weight: 600;
   color: var(--orange-color);
 }
@@ -303,7 +315,7 @@
 /* === OFFER BANNER === */
 .offerBanner {
   position: relative;
-  width: 98%;
+  width: var(--primary-width);
   margin: auto;
   height: 75vh;
   margin-top: 1%;
@@ -355,7 +367,7 @@
 
 /* === NEWSLETTER SECTION === */
 .newsletter {
-  width: 98%;
+  width: var(--primary-width);
   margin: auto;
   height: 50vh;
   margin-top: 1%;
